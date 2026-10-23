@@ -72,9 +72,9 @@ h1 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clam
 
 <script src="index.js"></script>
 <script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":3917600,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":3921188,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 // baixa sempre a versão nova do jogo (sem isso o navegador pode ficar com a antiga e não achar a sala dos outros)
-const VERSAO_PCK = "b7586b5859";
+const VERSAO_PCK = "08a6874179";
 const _fetch = window.fetch.bind(window);
 window.fetch = (u, o) => _fetch(u === 'index.pck' ? 'index.pck?v=' + VERSAO_PCK : u, o);
 const engine = new Engine(GODOT_CONFIG);
